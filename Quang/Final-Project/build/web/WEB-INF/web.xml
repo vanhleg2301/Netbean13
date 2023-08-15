@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>CheckFilter</filter-name>
+        <filter-class>filter.CheckFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CheckFilter</filter-name>
+        <url-pattern>/login.jsp</url-pattern>
+        <url-pattern>/update</url-pattern>
+        <url-pattern>/delete</url-pattern>
+        <url-pattern>/update.jsp</url-pattern>
+        <url-pattern>/add</url-pattern>
+        <url-pattern>/contact.jsp</url-pattern>
+        <url-pattern>/manager</url-pattern>
+        <url-pattern>/profile</url-pattern>
+        <url-pattern>/product</url-pattern>
+    </filter-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

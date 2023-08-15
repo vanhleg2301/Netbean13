@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>MainController</servlet-name>
+        <servlet-class>pe.spring23.controllers.MainController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AllProductServlet</servlet-name>
+        <servlet-class>pe.spring23.controllers.AllProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <servlet-class>pe.spring23.controllers.AddToCartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveServlet</servlet-name>
+        <servlet-class>pe.spring23.controllers.RemoveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainController</servlet-name>
+        <url-pattern>/MainController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AllProductServlet</servlet-name>
+        <url-pattern>/AllProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <url-pattern>/AddToCartServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveServlet</servlet-name>
+        <url-pattern>/RemoveServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>MainController</welcome-file>
+    </welcome-file-list>
+</web-app>
